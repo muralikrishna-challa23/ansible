@@ -2,5 +2,5 @@
   hosts: frontend
   tasks:
   - name: Ping
-    ansibles.builtin.ping:
+    ansible.builtin.ping:
      data: murali
