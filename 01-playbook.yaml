@@ -3,4 +3,4 @@
   tasks:
   - name: Ping
     ansibles.builtin.ping:
-    data: murali
+     data: murali
