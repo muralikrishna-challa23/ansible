@@ -2,20 +2,20 @@
   hosts: frontend
   tasks:
   - name: play-1 and task-1
-    ansible.biltin.debug:
+    ansible.builtin.debug:
      msg: "play1 task1"
 
   - name: play-1 and task-2
-    ansible.biltin.debug:
+    ansible.builtin.debug:
      msg: "play1 task2"
 
 - name: play-2
   hosts: frontend
   tasks:
   - name: play-2 and task-1
-    ansible.biltin.debug:
+    ansible.builtin.debug:
      msg: "play2 task1"
 
   - name: play-2 and task-2
-    ansible.biltin.debug:
+    ansible.builtin.debug:
      msg: "play2 task2"
