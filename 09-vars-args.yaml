@@ -1,0 +1,15 @@
+- name: task level variables
+  hosts: local
+  connection: local
+  # vars:
+  #  Course: DevOps
+  #  Duration: 4 months
+  #  TRAINER: Self
+  # vars_files:
+  # - course.yaml
+  tasks:
+  - name: print course info
+    # vars:
+    #  COURSE: Ansible
+    ansible.builtin.debug:
+     msg: "Info is {{COURSE}}, Duration is {{DURATION}}, Tainser is {{TRAINER}}"
