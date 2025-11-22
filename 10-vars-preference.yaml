@@ -7,18 +7,18 @@
    TRAINER: Self
   vars_files:
   - course.yaml
-  vars_prompt:
-  - name: COURSE
-    prompt: What is your COURSE?
-    private: false
+  # vars_prompt:
+  # - name: COURSE
+  #   prompt: What is your COURSE?
+  #   private: false
 
-  - name: DURATION
-    prompt: What is your DURATION?
-    private: false
+  # - name: DURATION
+  #   prompt: What is your DURATION?
+  #   private: false
 
-  - name: TRAINER
-    prompt: What is your TRAINER?
-    private: false
+  # - name: TRAINER
+  #   prompt: What is your TRAINER?
+  #   private: false
   tasks:
   - name: print course info
     # vars:
