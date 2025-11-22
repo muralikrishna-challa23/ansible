@@ -1,10 +1,10 @@
-- name: play level variables
+- name: loops
   hosts: local
   connection: local
   become: yes
   tasks:
   - name: loops install
-    ansible.builtin.package:
+    ansible.builtin.dnf:
      name: {{item}}
      state: installed
     loop:
