@@ -4,7 +4,7 @@
   vars:
    Course: DevOps
    Duration: 4 months
-   Trainser: Self
+   TRAINER: Self
   tasks:
   - name: print course info
     ansible.builtin.debug:
