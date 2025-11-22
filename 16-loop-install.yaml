@@ -1,0 +1,13 @@
+- name: play level variables
+  hosts: local
+  connection: local
+  become: yes
+  tasks:
+  - name: loops
+    ansible.builtin.dnf:
+     name: {{item}}
+     state: installed
+    loop:
+    - nginx
+    - mysql
+    - zip
