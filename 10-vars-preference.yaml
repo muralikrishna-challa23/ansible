@@ -21,10 +21,10 @@
     private: false
   tasks:
   - name: print course info
-    vars:
-     COURSE: task
-     DURATION: 4 months
-     TRAINER: self
+    # vars:
+    #  COURSE: task
+    #  DURATION: 4 months
+    #  TRAINER: self
     ansible.builtin.debug:
      msg: "Info is {{COURSE}}, Duration is {{DURATION}}, Tainser is {{TRAINER}}"
     #  msg: "{{username}} password is {{password}}"
