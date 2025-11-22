@@ -9,7 +9,6 @@
     ansible.biltin.debug:
      msg: "play1 task2"
 
-
 - name: play-2
   hosts: frontend
   tasks:
