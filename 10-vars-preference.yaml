@@ -1,10 +1,10 @@
 - name: task level variables
   hosts: local
   # connection: local
-  vars:
-   COURSE: Play
-   DURATION: 4 months
-   TRAINER: Self
+  # vars:
+  #  COURSE: Play
+  #  DURATION: 4 months
+  #  TRAINER: Self
   vars_files:
   - course.yaml
   # vars_prompt:
