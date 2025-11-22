@@ -1,0 +1,10 @@
+- name: play level variables
+  hosts: local
+  connection: local
+  vars:
+   Duration: 4
+  tasks:
+  - name: print course info
+    ansible.builtin.debug:
+     msg: "Duration is {{Duration}}"
+    when: Duration <5
