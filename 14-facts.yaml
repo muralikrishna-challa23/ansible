@@ -1,6 +1,7 @@
 - name: play level variables
   hosts: local
   connection: local
+  become: yes
   tasks:
   - name: check os is redhat
     ansible.builtin.dnf:
