@@ -3,7 +3,7 @@
   connection: local
   become: yes
   tasks:
-  - name: loops
+  - name: loops install
     ansible.builtin.dnf:
      name: {{item}}
      state: installed
