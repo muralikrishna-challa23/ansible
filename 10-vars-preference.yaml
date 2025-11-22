@@ -2,8 +2,8 @@
   hosts: local
   # connection: local
   vars:
-   Course: Play
-   Duration: 4 months
+   COURSE: Play
+   DURATION: 4 months
    TRAINER: Self
   vars_files:
   - course.yaml
