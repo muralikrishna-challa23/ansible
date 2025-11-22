@@ -10,9 +10,9 @@
    - Linux
    - Ansible
    CONCEPTS:
-    cloud: aws
-    cm: ansible
-    iac: terraform
+   - cloud: aws
+   - cm: ansible
+   - iac: terraform
   # vars_files:
   # - course.yaml
   # vars_prompt:
