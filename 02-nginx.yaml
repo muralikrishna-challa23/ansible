@@ -2,7 +2,7 @@
   hosts: frontend
   tasks:
   - name: nginx install
-    ansible.builtin.package:
+    ansibles.builtin.package:
     - name: nginx
       state: present      
   - name: start nginx
