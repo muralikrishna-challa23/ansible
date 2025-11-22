@@ -1,6 +1,6 @@
 - name: task level variables
-  # hosts: local
-  connection: local
+  hosts: local
+  # connection: local
   # vars:
   #  Course: DevOps
   #  Duration: 4 months
@@ -11,7 +11,7 @@
   - name: username
     prompt: What is your username?
     private: false
-    
+
   - name: password
     prompt: What is your password?
     private: true
