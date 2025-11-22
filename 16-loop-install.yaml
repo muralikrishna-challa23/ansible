@@ -5,7 +5,7 @@
   tasks:
   - name: loops install
     ansible.builtin.dnf:
-     name: {{item}}
+     name: "{{item}}"
      state: installed
     loop:
     - nginx
