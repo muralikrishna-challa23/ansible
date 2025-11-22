@@ -7,6 +7,11 @@
    tags:
     Application: Payment
     Environment: Dev
+   listtags:
+   - key: Application
+     value: Payment
+   - key: Environment
+     value: Dev
   tasks:
   - name: split function
     ansible.builtin.debug:
@@ -15,3 +20,7 @@
   - name: map/distionary to list
     ansible.builtin.debug:
      msg: "Tags are : {{ tags | dict2items }}"
+
+  - name: list to map/distionary
+    ansible.builtin.debug:
+     msg: "listtags are : {{ listtags | items2dict }}"
