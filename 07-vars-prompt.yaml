@@ -11,7 +11,7 @@
   - name: username
     prompt: What is your username?
     private: false
-  vars_prompt:
+    
   - name: password
     prompt: What is your password?
     private: true
