@@ -1,0 +1,10 @@
+- name: functions
+  hosts: local
+  connection: local
+  become: yes
+  vars:
+   technologies: DevOps, Linux, Shell, Ansible
+  tasks:
+  - name: split function
+    ansible.builtin.debug:
+     msg: " Technologies are: {{technologies | split(',') }}"
