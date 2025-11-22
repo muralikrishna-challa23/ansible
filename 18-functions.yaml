@@ -1,0 +1,8 @@
+- name: functions
+  hosts: local
+  connection: local
+  become: yes
+  tasks:
+  - name: functions default
+    ansible.builtin.debug:
+     msg: " hello, {{name | mandatory }}"
