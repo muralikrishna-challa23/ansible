@@ -1,0 +1,12 @@
+- name: play level variables
+  hosts: local
+  connection: local
+  become: yes
+  tasks:
+  - name: loops
+    ansible.builtin.debug:
+     msg: "List is {{item}}"
+    loop:
+    - nginx
+    - ansible
+    - terraform
