@@ -5,4 +5,4 @@
   tasks:
   - name: functions default
     ansible.builtin.debug:
-     msg: " hello, {{name | mandatory }}"
+     msg: " hello, {{name | default('Murali') }}"
