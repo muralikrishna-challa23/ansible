@@ -1,0 +1,17 @@
+- name: play level variables
+  hosts: local
+  connection: local
+  tasks:
+  - name: check os is redhat
+    ansible.builtin.dnf:
+     name: nginx
+     state: installed
+    when: ansible.os_family=="Redhat"
+
+  - name: check os is ubuntu
+    ansible.builtin.apt:
+     name: nginx
+     state: installed
+    when: ansible.os_family=="Debian"
+
+
