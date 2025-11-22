@@ -1,0 +1,35 @@
+- name: task level variables
+  hosts: local
+  connection: local
+  vars:
+   COURSE: Play
+   DURATION: 4
+   IS_LIVE: true
+   TOOLS: ["Linux","Ansible","Terraform"]
+   CONCEPTS:
+    cloud: aws
+    cm: ansible
+    iac: terraform
+  # vars_files:
+  # - course.yaml
+  # vars_prompt:
+  # - name: COURSE
+  #   prompt: What is your COURSE?
+  #   private: false
+
+  # - name: DURATION
+  #   prompt: What is your DURATION?
+  #   private: false
+
+  # - name: TRAINER
+  #   prompt: What is your TRAINER?
+  #   private: false
+  tasks:
+  - name: print course info
+    # vars:
+    #  COURSE: task
+    #  DURATION: 4 months
+    #  TRAINER: self
+    ansible.builtin.debug:
+     msg: "Info is {{COURSE}}, Duration is {{DURATION}}, Live is {{IS_LIVE}}  {{TOOLS}} {{CONCEPTS}}"
+    #  msg: "{{username}} password is {{password}}"
