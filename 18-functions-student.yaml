@@ -32,3 +32,8 @@
   - name: print student yaml
     ansible.builtin.debug:
      msg: " yaml read: {{file_yaml | to_json }}"
+
+  - name: Save file to json
+    ansible.builtin.copy:
+     dest: ./student-data.json
+     content:  "{{file_yaml | to_nice_json }}"
