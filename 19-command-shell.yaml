@@ -10,3 +10,11 @@
   - name: print commnad output
     ansible.builtin.debug:
      msg: "{{command_output}}"
+
+  - name: redirections
+    ansible.builtin.shell: "ls -ltr > /tmp/output.txt"
+    register: command_output
+
+  - name: print commnad output
+    ansible.builtin.debug:
+     msg: "{{command_output}}"
