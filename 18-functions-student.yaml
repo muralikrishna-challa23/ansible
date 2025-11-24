@@ -6,7 +6,7 @@
    technologies: DevOps, Linux, Shell, Ansible
    name: "Murali Challa"
    email: "MKREDDY23@gmail.com"
-   ipaddress: "255.245.299.04"
+   ipaddress: "255.245.255.04"
    tags:
     Application: Payment
     Environment: Dev
