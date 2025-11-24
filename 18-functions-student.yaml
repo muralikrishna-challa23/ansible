@@ -41,4 +41,4 @@
 
   - name: upper and lower
     ansible.builtin.debug:
-     msg:"{{name | upper }}"
+     msg:"{{ name | upper }}"
