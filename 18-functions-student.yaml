@@ -4,6 +4,7 @@
   become: yes
   vars:
    technologies: DevOps, Linux, Shell, Ansible
+   name: "Murali Challa"
    tags:
     Application: Payment
     Environment: Dev
@@ -37,3 +38,7 @@
     ansible.builtin.copy:
      dest: ./student-data.json
      content:  "{{file_yaml | to_nice_json }}"
+
+  - name: upper and lower
+    ansible.builtin.debug:
+     msg:"{{name | upper }}"
