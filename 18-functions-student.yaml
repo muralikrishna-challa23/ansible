@@ -6,6 +6,7 @@
    technologies: DevOps, Linux, Shell, Ansible
    name: "Murali Challa"
    email: "MKREDDY23@gmail.com"
+   ipaddress: "255.245.299.04"
    tags:
     Application: Payment
     Environment: Dev
@@ -47,3 +48,7 @@
   - name: upper and lower
     ansible.builtin.debug:
      msg: "{{ email | lower }}"
+  
+  - name: check ip is valid or not
+    ansible.builtin.debug:
+     msg: "{{ ipaddress  | asible.utils.ipv4 }}"
