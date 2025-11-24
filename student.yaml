@@ -1,0 +1,41 @@
+- name: "muralikrishna Challa"
+  dob: "01-01-1989"
+  age: 25
+  addresses:
+  - doorno: 402
+    street: chnada nagar
+    city: hyd
+    pin: 500050
+    type: temp
+
+  - doorno: 101
+    street: pathapadu
+    city: nellore
+    pin: 52430
+    type: permanent
+  
+  skills:
+  - java
+  - python
+  - devops
+
+- name: "Ram c"
+  dob: "01-09-1989"
+  age: 30
+  addresses:
+  - doorno: 402
+    street: kukatpally
+    city: hyd
+    pin: 50032
+    type: current
+
+  - doorno: 101
+    street: balaji nagar
+    city: nellore
+    pin: 456743
+    type: permanent
+  
+  skills:
+  - gch
+  - azure
+  - aws

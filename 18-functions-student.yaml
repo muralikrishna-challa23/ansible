@@ -24,3 +24,11 @@
   - name: list to map/distionary
     ansible.builtin.debug:
      msg: "listtags are : {{ listtags | items2dict }}"
+
+  - name: read yaml and store in variable
+    ansible.builtin.set_fact:
+     file_yaml: "{{ lookup('file','student.yaml') | from_yaml }}"
+
+  - name: print student yaml
+    ansible.builtin.debug:
+     msg: "{{file_yaml}}"
