@@ -5,6 +5,7 @@
   vars:
    technologies: DevOps, Linux, Shell, Ansible
    name: "Murali Challa"
+   email: "MKREDDY23@gmail.com"
    tags:
     Application: Payment
     Environment: Dev
@@ -41,4 +42,8 @@
 
   - name: upper and lower
     ansible.builtin.debug:
-     msg:"{{ name | upper }}"
+     msg: "{{ name | upper }}"
+
+  - name: upper and lower
+    ansible.builtin.debug:
+     msg: "{{ email | lower }}"
