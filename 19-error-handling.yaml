@@ -4,7 +4,7 @@
   become: yes
   tasks:
   - name: check user exits or not.
-    ansible.builtin.command: id roboshop
+    ansible.builtin.command: id ec2-user
     register: output
     ignore_errors: yes
 
