@@ -4,10 +4,14 @@
   become: yes
   tasks:
   - name: check user exits or not.
-    ansible.builtin.command: id ec2-user
+    ansible.builtin.command: id roboshop
     register: output
     ignore_errors: yes
 
   - name: print the output
     ansible.builtin.debug:
      msg: "{{ output }}"
+
+  - name: create user
+    ansible.builtin.command: useradd roboshop
+    when: output.rc != 0
