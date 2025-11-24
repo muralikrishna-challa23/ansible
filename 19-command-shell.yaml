@@ -14,7 +14,7 @@
   - name: redirections
     ansible.builtin.command: "ls -ltr > /tmp/output.txt"
     register: command_output
-    ignore_error: yes
+    ignore_errors: yes
 
   - name: print commnad output
     ansible.builtin.debug:
