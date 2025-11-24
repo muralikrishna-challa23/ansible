@@ -22,8 +22,7 @@
      image_id: "{{ami_id}}"
      tags:
       name: "{{ item }}"
-     loop:
-     - "{{instances}}"
+    loop: "{{instances}}"
     register: ec2_output
 
   - name: output of ec2
