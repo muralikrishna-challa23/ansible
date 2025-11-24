@@ -12,8 +12,9 @@
      msg: "{{command_output}}"
 
   - name: redirections
-    ansible.builtin.shell: "ls -ltr > /tmp/output.txt"
+    ansible.builtin.command: "ls -ltr > /tmp/output.txt"
     register: command_output
+    ignore_error: yes
 
   - name: print commnad output
     ansible.builtin.debug:
